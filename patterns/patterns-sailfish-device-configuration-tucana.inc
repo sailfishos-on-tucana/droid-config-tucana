@@ -13,13 +13,13 @@ Requires: patterns-sailfish-cellular-apps
 Requires: patterns-sailfish-device-tools
 
 # Fix ohm crashing during calls
-Requires: ohm >= 1.3.0-1
-Requires: ohm-plugins-misc >= 1.5.8-1.2.6.jolla
-Requires: libdres >= 1.1.17-1
+#Requires: ohm >= 1.3.0-1
+#Requires: ohm-plugins-misc >= 1.5.8-1.2.6.jolla
+#Requires: libdres >= 1.1.17-1
 
 # Nice to have
-Requires: irremote
-Requires: harbour-storeman
+#Requires: irremote
+#Requires: harbour-storeman
 
 # Debugging
 Requires: gstreamer1.0-tools
@@ -48,7 +48,7 @@ Requires: geoclue-provider-mlsdb
 
 # Devices with 2G or more memory should also include this booster
 # to improve camera startup times and the like
-Requires: mapplauncherd-booster-silica-qt5-media
+#Requires: mapplauncherd-booster-silica-qt5-media
 
 %description -n patterns-sailfish-device-configuration-tucana
 Pattern with packages for tucana configurations
