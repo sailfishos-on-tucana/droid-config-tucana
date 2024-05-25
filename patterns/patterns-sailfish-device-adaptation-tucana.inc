@@ -73,11 +73,12 @@ Requires: usb-moded
 Requires: rfkill
 
 # enable device lock and allow to select untrusted software
-#Requires: jolla-devicelock-daemon-encsfa
+Requires: jolla-devicelock-daemon-encsfa
 # Fingerprint unlocking daemon for community ports
-#Requires: sailfish-fpd-community
-#Requires: sailfish-devicelock-fpd
-#Requires: droid-biometry-fp
+Requires: sailfish-fpd-community
+Requires: sailfish-devicelock-fpd
+Requires: droid-biometry-fp
+Requires: sailfish-devicelock-fpd-test
 
 # Enable home encryption
 #Requires: sailfish-device-encryption
@@ -93,7 +94,7 @@ Requires: jolla-mediaplayer-radio
 # 1. binder plugin requires Android 8 or a newer base
 # 2. pn54x plugin talks directly to pn54x driver
 # These plugins are mutually exclusive, you need to pick one:
-#Requires: nfcd-binder-plugin
+Requires: nfcd-binder-plugin
 #Requires: nfcd-pn54x-plugin
 
 %description -n patterns-sailfish-device-adaptation-tucana
