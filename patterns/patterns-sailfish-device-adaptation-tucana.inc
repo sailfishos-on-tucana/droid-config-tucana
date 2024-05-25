@@ -78,7 +78,7 @@ Requires: jolla-devicelock-daemon-encsfa
 Requires: sailfish-fpd-community
 Requires: sailfish-devicelock-fpd
 Requires: droid-biometry-fp
-Requires: sailfish-devicelock-fpd-test
+Requires: sailfish-fpd-community-fpd-test
 
 # Enable home encryption
 #Requires: sailfish-device-encryption
