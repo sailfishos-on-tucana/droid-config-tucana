@@ -31,7 +31,7 @@ Requires: libngf-qt5-qtfeedback
 Requires: qt5-plugin-generic-evdev
 
 Requires: pulseaudio-modules-droid
-Requires: pulseaudio-modules-droid-hidl
+Requires: pulseaudio-modules-droid-jb2q
 
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend
