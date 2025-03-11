@@ -1,1 +1,2 @@
-# this file here to allow patching for five cameras
+[apps/jolla-camera]
+backCameraLabels=['1x', '2x', '0.6', '⚘', '4x']
