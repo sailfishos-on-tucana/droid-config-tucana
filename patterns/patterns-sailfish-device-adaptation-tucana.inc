@@ -42,7 +42,7 @@ Requires: sailfish-connman-plugin-suspend
 Requires: bluebinder
 
 # Telephony
-Requires: ofono-ril-binder-plugin
+Requires: ofono-binder-plugin
 Requires: dummy_netd
 
 # The -dummy-af is needed for newer devices that run the main
