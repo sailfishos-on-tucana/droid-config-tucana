@@ -1,5 +1,5 @@
 AUTHOR=Vlad G.
-EMAIL=https://github.com/b100dian
+EMAIL=b100dian@mastodon.social
 BROKEN=Proximity sensor
 FEATURES=In-screen fingerprint, Infrared port, 1/1.33" main camera (out of 5), Double tap to wake
 DEVICE=Mi Note 10
