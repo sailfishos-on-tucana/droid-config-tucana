@@ -33,7 +33,7 @@ Requires: qt5-plugin-generic-evdev
 Requires: pulseaudio-modules-droid
 Requires: pulseaudio-modules-droid-hidl
 # TODO remove jb2q next
-Requires: pulseaudio-modules-droid-jb2q
+#Requires: pulseaudio-modules-droid-jb2q
 
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend

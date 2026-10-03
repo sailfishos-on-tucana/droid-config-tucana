@@ -19,7 +19,6 @@ Requires: libdres >= 1.1.17-1
 
 # Nice to have
 Requires: irremote
-Requires: harbour-storeman
 
 # Debugging
 Requires: gstreamer1.0-tools
