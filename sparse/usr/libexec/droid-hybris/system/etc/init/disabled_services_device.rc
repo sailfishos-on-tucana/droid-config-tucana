@@ -13,13 +13,50 @@ service update_verifier_nonencrypted /system/bin/update_verifier_HYBRIS_DISABLED
 service update_verifier /system/bin/update_verifier_HYBRIS_DISABLED ${vold.decrypt}
     override
 
-
 service vendor.ipacm /system/vendor/bin/ipacm_HYBRIS_DISABLED
     override
 
 service displayfeature /system/bin/displayfeature_HYBRIS_DISABLED
     override
 
-service citsensor-hal-1-1  /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service_HYBRIS_DISABLED
-	override
+# citsensor-hal-1-1 is NOT disabled: hwcomposer (libsensor-C2SNotifier) uses it
 
+# Wifi display, unused with no Android framework
+service wfdhdcphalservice /vendor/bin/wfdhdcphalservice_HYBRIS_DISABLED
+    override
+
+service wfdvndservice /vendor/bin/wfdvndservice_HYBRIS_DISABLED
+    override
+
+# Android framework helpers, nothing on SailfishOS talks to them
+service incidentd /system/bin/incidentd_HYBRIS_DISABLED
+    override
+
+service iorapd /system/bin/iorapd_HYBRIS_DISABLED
+    override
+
+service idmap2d /system/bin/idmap2d_HYBRIS_DISABLED
+    override
+
+service statsd /system/bin/statsd_HYBRIS_DISABLED
+    override
+
+# adb is not used, usb_moded handles usb
+service adb_root /system/bin/adb_root_HYBRIS_DISABLED
+    override
+
+# These fail on every boot anyway
+service logd-auditctl /system/bin/auditctl_HYBRIS_DISABLED
+    override
+
+service qti-testscripts /vendor/bin/init.qti.testscripts.sh_HYBRIS_DISABLED
+    override
+
+service leds-sh /vendor/bin/init.leds.sh_HYBRIS_DISABLED
+    override
+
+service minidump64 /vendor/bin/minidump64_HYBRIS_DISABLED
+    override
+
+service iop-hal-2-0 /vendor/bin/hw/vendor.qti.hardware.iop@2.0-service_HYBRIS_DISABLED
+    override
