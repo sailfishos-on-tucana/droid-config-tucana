@@ -4,8 +4,9 @@ service installd installd_HYBRIS_DISABLED
 
 service cameraserver cameraserver_HYBRIS_DISABLED
 
-# Needs to start after pulseaudio
-# disabled. No proximity sensor for now. See https://github.com/sailfishos-on-tucana/Readme/issues/9
+# Keep disabled: the audio HAL runs inside PulseAudio, which gets
+# /dev/socket/audio_hw_socket for ultrasound proximity from the user
+# audio-hw-socket.socket (audio-hw-socket package). See https://github.com/sailfishos-on-tucana/Readme/issues/9
 service audioserver /system/bin/audioserver_HYBRIS_DISABLED
     disabled
     override
@@ -14,8 +15,8 @@ service media mediaserver_HYBRIS_DISABLED
 
 service update_engine update_engine_HYBRIS_DISABLED
 
-# needs to start before pulseaudio
-# disabled. No proximity sensor for now. See https://github.com/sailfishos-on-tucana/Readme/issues/9
+# Keep disabled: a second audio HAL copy next to PulseAudio's breaks call audio.
+# Must not declare the audio_hw_socket socket, audio-hw-socket.socket owns it.
 service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service_HYBRIS_DISABLED
      override
 

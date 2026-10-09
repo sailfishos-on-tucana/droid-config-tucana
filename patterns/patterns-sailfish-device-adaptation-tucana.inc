@@ -31,6 +31,11 @@ Requires: libngf-qt5-qtfeedback
 Requires: qt5-plugin-generic-evdev
 
 Requires: pulseaudio-modules-droid-hidl
+# jb2q (Android <= 10) also Provides pulseaudio-modules-droid, which droid-hal-version BuildRequires
+Requires: pulseaudio-modules-droid-jb2q
+# The fix for proxymity sensor is to forward a socket to pulseaudio when its starting the audio HAL
+Requires: audio-hw-socket
+
 
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend
@@ -46,6 +51,9 @@ Requires: dummy_netd
 # audiosystem-passthrough in qti mode (e.g. >=Android 9 Qualcomm),
 # to fix non-responding Camera app and/or voice during a phone call:
 Requires: audiosystem-passthrough-dummy-af
+
+# Ultrasound proximity: hands /dev/socket/audio_hw_socket to the audio HAL inside PulseAudio
+Requires: audio-hw-socket
 
 # Should fix camera recording https://github.com/sailfishos-sony-tama/main/issues/115#issuecomment-787675508
 Requires: miniaudiopolicy

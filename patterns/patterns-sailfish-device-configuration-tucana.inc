@@ -51,9 +51,6 @@ Requires: droid-hwcrypt
 # Devices with 2G or more memory should also include this booster
 # to improve camera startup times and the like
 
-# This is currently disabled as there's a race at startup with audio-hal-2 + audioservice and something
-# like gst-droid or pulseaudio that makes no mic audio in calls if you enable the above services for proximity to work..
-# The media booster worsenes this race it seems.
 Requires: mapplauncherd-booster-silica-qt5-media
 
 # boot logo is messing with boot order further, disabling
